@@ -1,0 +1,248 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-blue-grey: #81b3d2;
+  --light-grey: #CACACA;
+  --dark-grey: #888888;
+  --middle-brown: #766357;
+  --basic-gray: #669EC0;
+  --blue-steel: #5496BD;
+  --middle-gray-brown: #604E43;
+  --gray-brown: #503E33;
+  --smoky-white: #EBEBEB;
+  --smoky-white-2: #F2F2F2;
+  --smok-white-3: #EEEEEE;
+  --dull-gray: #666666;
+  --signal-black: #333333;
+  --white-aluminum: #A9A9A9;
+  --dirty-white: #E5E5E5;
+  --dark-brown: #231F20;
+}
+
+/*Global*/
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size:21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--dark-grey);
+  background-image: url("#");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+  color: var(--basic-black);
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active;
+ {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.container {
+  background-color: var(--basic-white);
+}
+.page-title h1 {
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantage-item {
+  text-align: center;
+}
+
+.advantage-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.advantage-item-description {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-blue-grey);
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--basic-white);
+}
+
+.advantage-item-other-description {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--smoky-white-3);
+  color: var(--signal-black);
+}
+
+.advantage-number {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--smoky-white-3);
+  color: var(--signal-black);
+}
+
+
+.first-advantage {
+  background-color: var(--basic-blue-grey);
+  color: var(--basic-white)
+
+}
+
+.first-number-advantage {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+.second-advantage {
+  background-color: var(--basic-blue-grey);
+  color: var(--basic-white);
+}
+
+.second-number-advantage {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+.recommendations-list {
+  list-style: none;
+}
+
+.recommendation-item {
+  text-align: justify;
+}
+
+.recommendation-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.recommendation-item-description {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--signal-black);
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: none;
+
+.button:hover {
+  background-color: var(--middle-brown);
+}
+.button:focus {
+  background-color: var(--middle-gray-brown);
+}
+.button:active {
+  background-color: var(--gray-brown);
+}
+
+.page-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-white);
+}
+
+.footer-phone {
+  color: inherit;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
