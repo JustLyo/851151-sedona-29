@@ -53,6 +53,8 @@ h2 {
 }
 
 .site-navigation {
+  margin: 0;
+  padding-top: 15px;
   list-style: none;
   background-color: var(--basic-white);
 }
