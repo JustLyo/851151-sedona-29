@@ -11,7 +11,7 @@
   --gray-brown: #503E33;
   --smoky-white: #EBEBEB;
   --smoky-white-2: #F2F2F2;
-  --smok-white-3: #EEEEEE;
+  --smoky-white-3: #EEEEEE;
   --dull-gray: #666666;
   --signal-black: #333333;
   --white-aluminum: #A9A9A9;
@@ -22,17 +22,16 @@
 /*Global*/
 
 body {
-  min-width: 960px;
+
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size:21px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: bold;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--dark-grey);
-  background-image: url("#");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -41,51 +40,41 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  align-items: center;
+h1,
+h2 {
+  visibility: hidden;
 }
 
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: bold;
-  color: var(--basic-black);
   background-color: transparent;
-}
-
-.main-navigation-wrapper {
-  background-color: var(--basic-white);
 }
 
 .site-navigation {
   list-style: none;
-  color: var(--basic-black);
-}
-
-.site-navigation-current a:not([href]) {
   background-color: var(--basic-white);
 }
 
+.site-navigation a:hover {
+  color: var(--basic-blue-grey);
+}
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.site-navigation a:active;
- {
-  background-color: var(--basic-white);
+.site-navigation a:focus {
   color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: var(--middle-brown);
+
 }
 
 .container {
   background-color: var(--basic-white);
 }
-.page-title h1 {
-  background-color: var(--basic-white);
-  text-align: center;
-}
+
 
 .advantages-list {
   list-style: none;
@@ -95,24 +84,15 @@ img {
   text-align: center;
 }
 
-.advantage-item h3 {
-  font-size: 21px;
-  line-height: 21px;
-}
-
 .advantage-item-description {
   font-size: 14px;
   line-height: 21px;
   background-color: var(--basic-blue-grey);
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: normal;
   color: var(--basic-white);
 }
 
 .advantage-item-other-description {
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -121,8 +101,6 @@ img {
 }
 
 .advantage-number {
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -133,13 +111,14 @@ img {
 
 .first-advantage {
   background-color: var(--basic-blue-grey);
-  color: var(--basic-white)
-
+  color: var(--basic-white);
+  width: 400px;
+  height: 256px;
+  left: 40px;
+  top: 780px;
 }
 
 .first-number-advantage {
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -147,11 +126,13 @@ img {
 .second-advantage {
   background-color: var(--basic-blue-grey);
   color: var(--basic-white);
+  width: 400px;
+  height: 256px;
+  left: 840px;
+  top: 1366px;
 }
 
 .second-number-advantage {
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -161,41 +142,49 @@ img {
 }
 
 .recommendation-item {
-  text-align: justify;
-}
-
-.recommendation-item h3 {
-  font-size: 21px;
-  line-height: 21px;
+  text-align: center;
 }
 
 .recommendation-item-description {
   font-size: 14px;
   line-height: 21px;
-  font-style: normal;
   font-weight: normal;
   color: var(--signal-black);
+}
+
+.other-advantages {
+  background-color: var(--smoky-white-3);
+}
+
+.booking {
+  text-align: center;
 }
 
 .button {
   font: inherit;
   text-align: center;
+  line-height: 86px;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--middle-brown);
   border: none;
+}
 
 .button:hover {
-  background-color: var(--middle-brown);
+  color: var(--basic-white);
+  background-color: var(--middle-gray-brown);
+
 }
 .button:focus {
-  background-color: var(--middle-gray-brown);
-}
-.button:active {
+  color: var(--basic-white);
   background-color: var(--gray-brown);
 }
 
+.button:active {
+  color: var(--basic-white);
+  background-color: var(--gray-brown);
+}
 .page-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -229,20 +218,22 @@ img {
 /* Social button */
 
 .social-button {
-  color: inherit;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-grey)
 }
 
-.social-button:hover,
+.social-button:hover {
+  background-color: var(--basic-gray);
+}
 .social-button:focus {
-  background-color: var(--basic-white);
+  background-color: var(--blue-steel)
 }
 
 .footer-phone {
   color: inherit;
 }
 
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
+.footer-copyright {
   color: var(--basic-black);
-  background-color: var(--basic-white);
+text-align: right;
 }
