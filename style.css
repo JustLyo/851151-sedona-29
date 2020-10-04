@@ -22,9 +22,9 @@
 /*Global*/
 
 body {
-
-  margin: 0;
-  padding: 0;
+  min-width: 1200px;
+  margin: 0 40px;
+  padding: 0px;
   font-family: "PT Sans", sans-serif;
   font-size:21px;
   line-height: 21px;
@@ -38,6 +38,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 h1,
@@ -45,18 +46,29 @@ h2 {
   visibility: hidden;
 }
 
+p {
+  padding: 10px;
+  margin: 20px 0;
+  font-weight: normal;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   background-color: transparent;
+  color: var(--basic-black);
 }
 
 .site-navigation {
   margin: 0;
-  padding-top: 15px;
+  padding: 10px;
   list-style: none;
   background-color: var(--basic-white);
+  color: var(--basic-black)
 }
 
 .site-navigation a:hover {
@@ -73,6 +85,14 @@ h2 {
 
 }
 
+.opening {
+  font-size:21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+
 .container {
   background-color: var(--basic-white);
 }
@@ -80,10 +100,19 @@ h2 {
 
 .advantages-list {
   list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.advantage-item {
+.advantage-item-one,
+.advantage-item-two {
   text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-blue-grey);
+  font-weight: normal;
+  color: var(--basic-white);
 }
 
 .advantage-item-description {
@@ -93,6 +122,7 @@ h2 {
   font-weight: normal;
   color: var(--basic-white);
 }
+
 
 .advantage-item-other-description {
   font-weight: normal;
@@ -108,31 +138,16 @@ h2 {
   line-height: 21px;
   background-color: var(--smoky-white-3);
   color: var(--signal-black);
+  text-align: center;
 }
 
-
-.first-advantage {
-  background-color: var(--basic-blue-grey);
-  color: var(--basic-white);
-  width: 400px;
-  height: 256px;
-  left: 40px;
-  top: 780px;
-}
 
 .first-number-advantage {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
 }
-.second-advantage {
-  background-color: var(--basic-blue-grey);
-  color: var(--basic-white);
-  width: 400px;
-  height: 256px;
-  left: 840px;
-  top: 1366px;
-}
+
 
 .second-number-advantage {
   font-weight: normal;
@@ -140,11 +155,20 @@ h2 {
   line-height: 21px;
 }
 .recommendations-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  background-color: var(--basic-white);
 }
 
 .recommendation-item {
+  padding: 10px;
+  margin: 0;
   text-align: center;
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
 }
 
 .recommendation-item-description {
@@ -154,8 +178,20 @@ h2 {
   color: var(--signal-black);
 }
 
-.other-advantages {
+.advantage-item-three,
+.advantage-item-four,
+.advantage-item-five {
+  font-size: 14px;
+  line-height: 21px;
   background-color: var(--smoky-white-3);
+  color: var(--signal-black);
+  text-align: center;
+}
+.question {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .booking {
@@ -163,9 +199,8 @@ h2 {
 }
 
 .button {
-  font: inherit;
   text-align: center;
-  line-height: 86px;
+  line-height: 26px;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
@@ -190,11 +225,10 @@ h2 {
 .page-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
-  background-position: 0 0;
-  background-repeat: repeat;
 }
 
 .footer-contacts a {
+  font-weight: bold;
   color: var(--basic-black);
   text-decoration: none;
 }
@@ -204,8 +238,14 @@ h2 {
   text-decoration: none;
 }
 
+.hashtag {
+  font-weight: bold;
+}
+
 .footer-social {
   text-align: center;
+  margin: 0;
+  padding: 10px;
 }
 
 .footer-social ul {
@@ -214,21 +254,20 @@ h2 {
 
 .footer-social h2 {
   font-size: 14px;
-
 }
 
 /* Social button */
 
 .social-button {
   color: var(--basic-white);
-  background-color: var(--basic-blue-grey)
+  background-color: var(--basic-blue-grey);
 }
 
 .social-button:hover {
   background-color: var(--basic-gray);
 }
 .social-button:focus {
-  background-color: var(--blue-steel)
+  background-color: var(--blue-steel);
 }
 
 .footer-phone {
@@ -237,5 +276,8 @@ h2 {
 
 .footer-copyright {
   color: var(--basic-black);
-text-align: right;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
 }
