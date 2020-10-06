@@ -148,7 +148,12 @@ a {
 }
 .advantage-item-title {
   font-weight: bold;
+  font-size: 21px;
   color: var(--basic-black);
+}
+
+.advantage-title-main{
+  color: var(--basic-white);
 }
 
 .recommendations-list {
