@@ -1,0 +1,247 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-blue-grey: #81b3d2;
+  --light-grey: #CACACA;
+  --dark-grey: #888888;
+  --middle-brown: #766357;
+  --basic-gray: #669EC0;
+  --blue-steel: #5496BD;
+  --middle-gray-brown: #604E43;
+  --gray-brown: #503E33;
+  --smoky-white: #EBEBEB;
+  --smoky-white-2: #F2F2F2;
+  --smoky-white-3: #EEEEEE;
+  --dull-gray: #666666;
+  --signal-black: #333333;
+  --white-aluminum: #A9A9A9;
+  --dirty-white: #E5E5E5;
+  --dark-brown: #231F20;
+}
+
+/*Global*/
+
+body {
+  min-width: 1200px;
+  margin: 0 40px;
+  padding: 0px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  color: var(--signal-black);
+  text-transform: uppercase;
+  background-color: var(--dark-grey);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+ position: absolute;
+ clip: rect(0 0 0 0);
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+}
+
+.button-brown {
+  text-align: center;
+  font-weight: bold;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--middle-brown);
+  border: none;
+}
+
+.button-brown:hover {
+  color: var(--basic-white);
+  background-color: var(--middle-gray-brown);
+
+}
+.button-brown:focus {
+  color: var(--basic-white);
+  background-color: var(--gray-brown);
+}
+
+.button-brown:active {
+  color: var(--basic-white);
+  background-color: var(--gray-brown);
+}
+
+.button-blue {
+  color: var(--basic-white);
+  background-color: var(--basic-blue-grey);
+}
+
+/*Main navigation*/
+
+.main-navigation {
+  font-weight: bold;
+  background-color: transparent;
+
+}
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue-grey);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: var(--middle-brown);
+}
+
+/*Advantages*/
+
+.opening {
+  font-size:21px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.why-so-cool {
+  text-align: center;
+}
+
+.container {
+  background-color: var(--basic-white);
+}
+
+
+.advantages-list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage-item {
+  text-align: center;
+  background-color: var(--smoky-white-3);
+  font-weight: normal;
+}
+
+.advantage-item-main {
+  background-color: var(--basic-blue-grey);
+  color: var(--basic-white);
+}
+.advantage-item-title {
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.recommendations-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--basic-white);
+}
+
+.recommendation-item {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  color: var(--signal-black);
+}
+
+.recommendations-title {
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--basic-black);
+}
+
+/*Booking*/
+
+.question {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.booking {
+  text-align: center;
+}
+
+.button-brown-search {
+  line-height: 26px;
+}
+
+/*Footer*/
+
+.page-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.footer-contacts a {
+  font-weight: bold;
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.hashtag {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.footer-phone {
+  color: inherit;
+}
+
+.footer-social {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/* Social button */
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-blue-grey);
+}
+
+.social-button:hover {
+  background-color: var(--basic-gray);
+}
+.social-button:focus {
+  background-color: var(--blue-steel);
+}
+
+
+.footer-copyright {
+  color: var(--basic-black);
+  text-align: center;
+}
