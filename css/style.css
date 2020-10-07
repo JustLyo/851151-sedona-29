@@ -70,22 +70,38 @@ a {
 }
 
 .button-brown:active {
-  color: var(--basic-white);
+  color: rgba(255, 255, 255, 0.3);
   background-color: var(--gray-brown);
 }
 
 .button-blue {
+  font-weight: bold;
+  vertical-align: middle;
+  text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-blue-grey);
 }
 
+.button-blue:hover {
+  background-color: var(--basic-gray);
+}
+
+.button-blue:active {
+background-color: var(--blue-steel);
+color: rgba(255, 255, 255, 0.3);
+}
+
+
+}
 /*Main navigation*/
 
 .main-navigation {
   font-weight: bold;
   background-color: transparent;
-
+  margin: 0;
+  padding: 0;
 }
+
 .site-navigation {
   list-style: none;
 }
@@ -95,6 +111,7 @@ a {
   padding: 10px;
   list-style: none;
   color: var(--basic-black);
+  font-weight: bold;
 }
 
 .site-navigation a:hover {
@@ -102,8 +119,7 @@ a {
 }
 
 .site-navigation a:focus {
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation a:active {
@@ -190,6 +206,7 @@ a {
 }
 
 .button-brown-search {
+  font-size: 21px;
   line-height: 26px;
 }
 
@@ -249,4 +266,69 @@ a {
 .footer-copyright {
   color: var(--basic-black);
   text-align: center;
+}
+
+/*Hotels page*/
+
+.founded {
+  font-size: 21px;
+  color: var(--basic-black)
+}
+
+.sorting-list {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-parameters a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--basic-blue-grey);
+}
+
+.sorting-parameters a:hover {
+  color: var(--basic-blue-grey);
+}
+
+.sorting-parameters a:focus {
+  color: var(--basic-blue-grey);
+  text-decoration: none;
+}
+
+.sorting-parameters a:active {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+/*Hotels list*/
+
+.founded-list {
+  list-style: none;
+}
+
+
+.hotel-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.hotel-title:hover {
+  color: var(--basic-blue-grey);
+}
+
+.hotel-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.rating {
+  background-color: var(--smoky-white-2);
+  color: var(--dull-gray);
+}
+
+.rating-stars-list {
+  list-style: none;
 }
