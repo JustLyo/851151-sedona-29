@@ -118,13 +118,10 @@ color: rgba(255, 255, 255, 0.3);
   color: var(--basic-blue-grey);
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation a:active {
-  color: var(--middle-brown);
-}
 
 /*Advantages*/
 
@@ -258,7 +255,7 @@ color: rgba(255, 255, 255, 0.3);
 .social-button:hover {
   background-color: var(--basic-gray);
 }
-.social-button:focus {
+.social-button:active {
   background-color: var(--blue-steel);
 }
 
@@ -269,9 +266,13 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 /*Hotels page*/
-.parameter {
-  background-color: var(--basic-white);
+
+.site-navigation-current a {
+  list-style: none;
+  color: var(--middle-brown);
+  font-weight: bold;
 }
+
 
 .founded {
   font-size: 21px;
@@ -279,7 +280,8 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .sorting {
- background-color: var(--basic-white);
+  font-size: 12px;
+  line-height: 18px;
 }
 
 
@@ -302,16 +304,15 @@ color: rgba(255, 255, 255, 0.3);
   color: var(--basic-blue-grey);
 }
 
-.sorting-parameters a:focus {
-  color: var(--basic-blue-grey);
-  text-decoration: none;
-}
-
 .sorting-parameters a:active {
   color: var(--basic-black);
   text-decoration: none;
 }
 
+.sorting-parameters-current a {
+  color: var(--basic-blue-grey);
+  text-decoration: none;
+}
 /*Hotels list*/
 
 .founded-list {
@@ -320,13 +321,8 @@ color: rgba(255, 255, 255, 0.3);
   padding: 0;
 }
 
-.hotel-item {
-  background-color: var(--basic-white);
-}
-
 .hotel-title {
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
   color: var(--basic-black);
 }
@@ -340,10 +336,14 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
+  line-height: 21px;
   background-color: var(--smoky-white-2);
   color: var(--dull-gray);
 }
 
 .rating-stars-list {
+  margin: 0;
+  padding: 0;
+  line-height: 21px;
   list-style: none;
 }
